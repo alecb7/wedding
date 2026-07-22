@@ -21,6 +21,5 @@ then open http://localhost:4173.
 
 ## To do before launch
 
-- Fill in the church name in the ceremony line of `index.html` (marked with a TODO comment)
 - Confirm the €570 and €290 wedding rates with Sheen Falls Lodge
 - Restore the commented out RSVP section, and its nav link, once invitations go out
