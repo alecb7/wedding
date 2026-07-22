@@ -1,0 +1,282 @@
+:root {
+  --cream: #fdf7f2;
+  --cream-deep: #f5ede3;
+  --ink: #3a4535;
+  --forest: #4e5d45;
+  --sage: #8a9a73;
+  --gold: #a8915c;
+  --river: #8fa9b4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navigation */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1.1rem 1rem;
+  background: color-mix(in srgb, var(--cream) 92%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  color: var(--gold);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 3rem 1.5rem 4.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-art img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2.5rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.45em;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.names {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 10vw, 6.2rem);
+  color: var(--forest);
+  margin: 1.2rem 0 0.4rem;
+  line-height: 1.1;
+}
+
+.names .amp {
+  color: var(--gold);
+}
+
+.names.small {
+  font-size: 2.2rem;
+  margin: 0 0 0.3rem;
+}
+
+.subline {
+  font-style: italic;
+  letter-spacing: 0.32em;
+  color: var(--gold);
+  font-size: 1.05rem;
+  margin-bottom: 1.8rem;
+}
+
+.rule {
+  width: 46px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.6rem auto;
+}
+
+.venue-line {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.date-line {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-weight: 600;
+}
+
+.countdown {
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* Sections */
+.section {
+  padding: 4.5rem 1.5rem;
+  text-align: center;
+}
+
+.section.alt {
+  background: var(--cream-deep);
+}
+
+.section h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 1px;
+  background: var(--gold);
+  margin: 1.1rem auto 0;
+}
+
+.section h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+.section-intro,
+.address {
+  max-width: 620px;
+  margin: 1.6rem auto 0;
+}
+
+.inline-link {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  color: var(--gold);
+}
+
+/* Contact cards */
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.contact-card p {
+  line-height: 1.9;
+}
+
+.address {
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* Schedule */
+.schedule {
+  max-width: 560px;
+  margin: 2.2rem auto 0;
+}
+
+.schedule > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 30%, transparent);
+  text-align: left;
+}
+
+.schedule dt {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding-top: 0.2rem;
+}
+
+.schedule dd {
+  font-style: italic;
+  text-align: right;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2.4rem;
+  border: 1px solid var(--gold);
+  color: var(--ink);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.button:hover {
+  background: var(--gold);
+  color: var(--cream);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 3.5rem 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    gap: 1.2rem;
+  }
+
+  .schedule > div {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .schedule dd {
+    text-align: left;
+  }
+}
