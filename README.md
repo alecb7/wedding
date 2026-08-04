@@ -14,12 +14,21 @@ then open http://localhost:4173.
 
 ## Structure
 
-- `index.html` — the whole site, including the inline SVG illustration
+- `index.html` — home page with the save the date artwork and countdown
+- `our-day.html` — ceremony, celebration, day after and the adults only note (no timings until invites go out)
+- `travel.html` — getting there and where to stay
+- `contact.html` — contact details
+
+Photos live in `assets/photos/` and are placed beside text in alternating
+left/right `media-row` sections across the pages (add class `flip` to put the
+photo on the right).
 - `css/styles.css` — all styling and the colour palette (defined as CSS variables in `:root`)
-- `js/main.js` — the countdown in the hero
-- `assets/` — drop the original save the date artwork or photographs here when ready
+- `js/main.js` — the countdown on the home page
+- `assets/` — the save the date artwork and, in time, photographs
 
 ## To do before launch
 
 - Confirm the €570 and €290 wedding rates with Sheen Falls Lodge
-- Restore the commented out RSVP section, and its nav link, once invitations go out
+- Add more photos of Zara and Alec to `assets/photos/` and weave them into the pages
+- Add timings back to `our-day.html` once the invitations have gone out
+- Add an RSVP page once invitations go out
