@@ -119,9 +119,9 @@ body {
 }
 
 .names {
-  font-family: "Lora", Georgia, serif;
+  font-family: "Libre Baskerville", Georgia, serif;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(2.6rem, 7vw, 4.2rem);
   letter-spacing: 0.04em;
   color: var(--forest);
