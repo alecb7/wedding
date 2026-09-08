@@ -63,7 +63,7 @@ body {
 /* Sub-page header */
 .page-head {
   text-align: center;
-  padding: 3.5rem 1.5rem 1rem;
+  padding: 1.5rem 1.5rem 0;
 }
 
 .page-head h1 {
@@ -81,7 +81,7 @@ body {
   width: 46px;
   height: 1px;
   background: var(--gold);
-  margin: 1.4rem auto 0;
+  margin: 0.8rem auto 0;
 }
 
 /* Hero */
@@ -391,6 +391,30 @@ body {
   .media-text .address {
     text-align: center;
   }
+}
+
+/* Map figure */
+.map-figure {
+  max-width: 560px;
+  margin: 3rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.map-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid color-mix(in srgb, var(--gold) 35%, transparent);
+  padding: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.map-figure figcaption {
+  font-style: italic;
+  color: var(--gold);
+  margin-top: 0.9rem;
+  text-align: center;
 }
 
 /* Footer */
