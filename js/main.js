@@ -1,3 +1,5 @@
+console.log("Honestly Louis you had nothing better to do than delve into the console of a wedding website? Absolute wrongun");
+
 (function () {
   var target = new Date("2027-04-09T14:00:00+01:00");
   var el = document.getElementById("countdown");
